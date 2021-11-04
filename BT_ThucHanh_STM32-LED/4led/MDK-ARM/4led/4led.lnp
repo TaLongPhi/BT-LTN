@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"4led\startup_stm32f401xe.o"
+"4led\main.o"
+"4led\stm32f4xx_it.o"
+"4led\stm32f4xx_hal_msp.o"
+"4led\stm32f4xx_hal_tim.o"
+"4led\stm32f4xx_hal_tim_ex.o"
+"4led\stm32f4xx_hal_rcc.o"
+"4led\stm32f4xx_hal_rcc_ex.o"
+"4led\stm32f4xx_hal_flash.o"
+"4led\stm32f4xx_hal_flash_ex.o"
+"4led\stm32f4xx_hal_flash_ramfunc.o"
+"4led\stm32f4xx_hal_gpio.o"
+"4led\stm32f4xx_hal_dma_ex.o"
+"4led\stm32f4xx_hal_dma.o"
+"4led\stm32f4xx_hal_pwr.o"
+"4led\stm32f4xx_hal_pwr_ex.o"
+"4led\stm32f4xx_hal_cortex.o"
+"4led\stm32f4xx_hal.o"
+"4led\stm32f4xx_hal_exti.o"
+"4led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "4led\4led.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "4led.map" -o 4led\4led.axf
